@@ -2,7 +2,7 @@
 - Required instatlled Odoo APP *MuK Webhooks for Odoo*
 - Version 1.0.1
 - Last modified at: 2022-11-18 17:00
-### How to custom Endpoint:
+### How to custom Endpoints
 - Access Setting -> API -> Configuration -> Endpoint
 - On listing endpoints click to button Create
 #### 1. Sales Advance Payment Invoices
@@ -41,5 +41,6 @@
     immediate.with_context(context).process()
     content = True
     ```
+### How to custom Webhook
 
 ### Any Question ?
