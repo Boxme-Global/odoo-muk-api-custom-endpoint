@@ -2,7 +2,6 @@
 ### How to custom Endpoint:
 - Access Setting -> API -> Configuration -> Endpoint
 - On listing endpoints click to button Create
-- 
 #### 1. Sales Advance Payment Invoices
 - Name: _Sales Advance Payment Invoices_
 - Endpoint: `sale-order-create-invoices`
