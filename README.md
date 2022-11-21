@@ -1,15 +1,16 @@
 ### Using Muk APIs
 - Required instatlled Odoo APP *MuK Webhooks for Odoo*
-- Version 1.0.1
-- Last modified at: 2022-11-18 17:00
+- Version 1.0.2
+- Last modified at: 2022-11-21
+
 ### How to custom Endpoints
 - Access Setting -> API -> Configuration -> Endpoint
 - On listing endpoints click to button Create
-#### 1. Sales Advance Payment Invoices
-- Name: _Sales Advance Payment Invoices_
-- Endpoint: `sale-order-create-invoices`
+#### 1. Custom API Create Invoices
+- Name: Enter name of API (ex: _Sales Advance Payment Invoices_)
+- Endpoint: `create-invoices`
 - HTTP Method: `POST`
-- Model: `sale.advance.payment.inv`
+- Model: Select model `sale.advance.payment.inv` (_Sales Advance Payment Invoice_)
 - Evaluation Type: `Execute Python Code`
 - Protected: `Yes`
 - Sudo Evaluation: `Yes`
@@ -24,11 +25,11 @@
     payment.with_context(context).create_invoices()
     content = True
     ```
-#### 2. Immediate Transfer
-- Name: _Delivery Order Immediate Transfer_
-- Endpoint: `delivery-order-immediate-transfer`
+#### 2. Custom API Immediate Transfer for confirm DO
+- Name: Enter name of API  (ex: _Delivery Order Immediate Transfer_)
+- Endpoint: `immediate-transfer`
 - HTTP Method: `POST`
-- Model: `stock.immediate.transfer`
+- Model: Select model `stock.immediate.transfer` (_Immediate Transfer_)
 - Evaluation Type: `Execute Python Code`
 - Protected: `Yes`
 - Sudo Evaluation: `Yes`
@@ -43,4 +44,4 @@
     ```
 ### How to custom Webhook
 
-### Any Question ?
+### Frequently questions ?
