@@ -26,7 +26,7 @@
     content = True
     ```
 #### 2. Custom API Immediate Transfer for confirm DO
-- Name: Enter name of API  (ex: _Delivery Order Immediate Transfer_)
+- Name: Enter name of API  (ex: _Immediate Transfer_)
 - Endpoint: `immediate-transfer`
 - HTTP Method: `POST`
 - Model: Select model `stock.immediate.transfer` (_Immediate Transfer_)
