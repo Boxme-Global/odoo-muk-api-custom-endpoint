@@ -42,7 +42,7 @@
     immediate.with_context(context).process()
     content = True
     ```
-#### 3, Custom API Register Payment
+#### 3. Custom API Register Payment
 - Name: Enter name of API  (ex: _Create Register Payment_)
 - Endpoint: `create-register-payment`
 - HTTP Method: `POST`
