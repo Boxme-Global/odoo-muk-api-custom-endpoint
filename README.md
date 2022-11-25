@@ -42,6 +42,23 @@
     immediate.with_context(context).process()
     content = True
     ```
+#### 3, Custom API Register Payment
+- Name: Enter name of API  (ex: _Create Register Payment_)
+- Endpoint: `create-register-payment`
+- HTTP Method: `POST`
+- Model: Select model `account.payment.register` (_Register Payment_)
+- Evaluation Type: `Execute Python Code`
+- Protected: `Yes`
+- Sudo Evaluation: `Yes`
+- Logging: `Yes`
+- *Python codes setting*:
+    ```python
+    context = params["with_context"]
+    data = params["args"][0]
+    instance = model.with_context(context).create(data)
+    content = instance.ids
+    ```
+  
 ### How to custom Webhook
 
 ### Frequently questions ?
